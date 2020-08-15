@@ -1,0 +1,9 @@
+2020-08-13 21:54:34.834  INFO 18824 --- [main] com.moon.sell.LoggerTest                 : Starting LoggerTest on 刘海威 with PID 18824 (started by liuhaiwei in D:\MyCode\sell)
+2020-08-13 21:54:34.835  INFO 18824 --- [main] com.moon.sell.LoggerTest                 : No active profile set, falling back to default profiles: default
+2020-08-13 21:54:35.844  INFO 18824 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-13 21:54:36.139  INFO 18824 --- [main] com.moon.sell.LoggerTest                 : Started LoggerTest in 1.656 seconds (JVM running for 2.74)
+2020-08-13 21:54:36.332  INFO 18824 --- [main] com.moon.sell.LoggerTest                 : info....
+2020-08-13 21:54:36.333  WARN 18824 --- [main] com.moon.sell.LoggerTest                 : warning....
+2020-08-13 21:54:36.333 ERROR 18824 --- [main] com.moon.sell.LoggerTest                 : error
+2020-08-13 21:54:36.334  INFO 18824 --- [main] com.moon.sell.LoggerTest                 : name:test name
+2020-08-13 21:54:36.354  INFO 18824 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
