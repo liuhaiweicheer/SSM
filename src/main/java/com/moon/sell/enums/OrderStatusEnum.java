@@ -1,6 +1,5 @@
 package com.moon.sell.enums;
 
-import lombok.Data;
 import lombok.Getter;
 
 /**
@@ -8,7 +7,7 @@ import lombok.Getter;
  * @date 2020/8/14
  */
 @Getter
-public enum  OrderStatusEnum {
+public enum  OrderStatusEnum implements CodeEnum<Integer> {
     NEW(0,"新订单"),
     FINISH(1,"完结"),
     CANCEL(2,"取消")

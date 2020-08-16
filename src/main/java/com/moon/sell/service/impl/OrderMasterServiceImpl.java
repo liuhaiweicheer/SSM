@@ -1,6 +1,6 @@
 package com.moon.sell.service.impl;
 
-import com.moon.sell.converter.OrderMaster2OrderDTO;
+import com.moon.sell.converter.OrderMaster2OrderDTOConvert;
 import com.moon.sell.dataObject.OrderDetail;
 import com.moon.sell.dataObject.OrderMaster;
 import com.moon.sell.dataObject.ProductInfo;
@@ -14,6 +14,7 @@ import com.moon.sell.repository.OrderDetailRepository;
 import com.moon.sell.repository.OrderMasterRepository;
 
 import com.moon.sell.service.OrderMasterService;
+import com.moon.sell.service.PayService;
 import com.moon.sell.utils.KeyUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.weaver.ast.Or;
@@ -22,6 +23,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
@@ -50,6 +52,9 @@ public class OrderMasterServiceImpl implements OrderMasterService {
 
     @Autowired
     private OrderMasterRepository orderMasterRepository;
+
+    @Autowired
+    private PayService payService;
 
     @Override
     @Transactional
@@ -121,7 +126,7 @@ public class OrderMasterServiceImpl implements OrderMasterService {
     @Override
     public Page<OrderDTO> findList(String buyerOpenid, Pageable pageable) {
         Page<OrderMaster> orderMasterPage = orderMasterRepository.findByBuyerOpenid(buyerOpenid, pageable);
-        List<OrderDTO> orderDTOList = OrderMaster2OrderDTO.convert(orderMasterPage.getContent());
+        List<OrderDTO> orderDTOList = OrderMaster2OrderDTOConvert.convert(orderMasterPage.getContent());
         Page<OrderDTO> orderDTOPage = new PageImpl<>(orderDTOList,pageable,orderMasterPage.getTotalElements());
         return orderDTOPage;
     }
@@ -158,7 +163,8 @@ public class OrderMasterServiceImpl implements OrderMasterService {
 
         // 如果支付，退款
         if(orderDTO.getPayStatus().equals(PayStatusEnum.SUCCESS)){
-            //TODO
+
+            payService.refund(orderDTO);
         }
         return orderDTO;
     }
@@ -210,5 +216,14 @@ public class OrderMasterServiceImpl implements OrderMasterService {
         }
 
         return orderDTO;
+    }
+
+    @Override
+    public Page<OrderDTO> findList(Pageable pageable) {
+//        PageRequest request = PageRequest.of()
+        Page<OrderMaster> orderMasterPage = orderMasterRepository.findAll(pageable);
+        List<OrderDTO> orderDTOList = OrderMaster2OrderDTOConvert.convert(orderMasterPage.getContent());
+        Page<OrderDTO> orderDTOPage = new PageImpl<>(orderDTOList,pageable,orderMasterPage.getTotalElements());
+        return orderDTOPage;
     }
 }

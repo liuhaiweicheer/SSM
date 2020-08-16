@@ -3,6 +3,7 @@ package com.moon.sell.service.impl;
 import com.moon.sell.dataObject.OrderDetail;
 import com.moon.sell.dto.OrderDTO;
 import lombok.extern.slf4j.Slf4j;
+import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -85,4 +86,16 @@ class OrderMasterServiceTest {
         orderMasterService.paid(orderDTO);
         System.out.println(orderDTO);
     }
+
+    @Test
+    void findList2() {
+        PageRequest request = PageRequest.of(0, 10);
+        Page<OrderDTO> list = orderMasterService.findList(request);
+        for(OrderDTO orderDTO:list){
+            System.out.println(orderDTO);
+        }
+        Assert.assertTrue(list.getTotalElements() > 0);
+    }
+
+
 }

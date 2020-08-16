@@ -4,6 +4,7 @@ server:
     context-path: /sell
 
 
+
 #logging:
 #  pattern:
 #    console: "%d ----- %mag%n "
@@ -24,6 +25,10 @@ spring:
     show-sql: true
   jackson:
     default-property-inclusion: non_null     # 让字段的空字段不返回
+
+  freemarker:
+    suffix: .ftl  #  SpringBoot在2.2.X中，已经把原先默认的后缀名.ftl改成了.ftlh，如果想继续保持以前的.ftl后缀名，需要在配置文件application.yml中配置一下（或application.properties，修改一下排版格式）：
+    template-loader-path: classpath:/templates/
 
 
 wechat:

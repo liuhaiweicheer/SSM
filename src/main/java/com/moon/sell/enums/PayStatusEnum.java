@@ -1,14 +1,13 @@
 package com.moon.sell.enums;
 
 import lombok.Getter;
-import org.springframework.data.domain.PageRequest;
 
 /**
  * @author lhw
  * @date 2020/8/14
  */
 @Getter
-public enum PayStatusEnum {
+public enum PayStatusEnum implements CodeEnum<Integer> {
     WAIT(0,"未支付"),
     SUCCESS(1,"支付成功")
     ;
