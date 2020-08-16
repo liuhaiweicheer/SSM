@@ -1,47 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf14a99c-977d-4a1e-8da9-3337af104691" name="Default Changelist" comment="SpringBoot 微信公众号点餐后端">
-      <change afterPath="$PROJECT_DIR$/log/error.2020-08-16.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/info.2020-08-16.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/controller/SellerOrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/enums/CodeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/utils/EnumUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/utils/JsonUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/api/ratings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/api/seller.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/mp3/song.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/pay.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/common/error.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/common/header.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/common/nav.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/common/success.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/order/detail.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/order/list.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pay/create.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pay/success.ftl" afterDir="false" />
+    <list default="true" id="cf14a99c-977d-4a1e-8da9-3337af104691" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sell.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sell.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moon/sell/converter/OrderMaster2OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/converter/OrderMaster2OrderDTOConvert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moon/sell/dto/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/dto/OrderDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moon/sell/enums/OrderStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/enums/OrderStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moon/sell/enums/PayStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/enums/PayStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moon/sell/service/OrderMasterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/service/OrderMasterService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moon/sell/service/impl/OrderMasterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/service/impl/OrderMasterServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moon/sell/service/impl/PayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/service/impl/PayServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/moon/sell/service/impl/OrderMasterServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/moon/sell/service/impl/OrderMasterServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/moon/sell/converter/OrderMaster2OrderDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/moon/sell/dto/OrderDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/moon/sell/dto/OrderDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/moon/sell/enums/OrderStatusEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/moon/sell/enums/OrderStatusEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/moon/sell/enums/PayStatusEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/moon/sell/enums/PayStatusEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/moon/sell/service/OrderMasterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/moon/sell/service/OrderMasterService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/moon/sell/service/impl/OrderMasterServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/moon/sell/service/impl/OrderMasterServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/moon/sell/service/impl/PayServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/moon/sell/service/impl/PayServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/moon/sell/service/impl/OrderMasterServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/moon/sell/service/impl/OrderMasterServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,7 +216,7 @@
       <workItem from="1597323963536" duration="5497000" />
       <workItem from="1597383109841" duration="25705000" />
       <workItem from="1597460214526" duration="23028000" />
-      <workItem from="1597557422291" duration="14240000" />
+      <workItem from="1597557422291" duration="14911000" />
     </task>
     <task id="LOCAL-00001" summary="SpringBoot 微信公众号点餐后端">
       <created>1597499187705</created>
@@ -278,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597501217918</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="SpringBoot 微信公众号点餐后端">
+      <created>1597571897932</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1597571897932</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,10 +278,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="296" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597567445986" />
-    <state x="440" y="114" key="CommitChangelistDialog2" timestamp="1597501794302">
+    <state x="440" y="114" key="CommitChangelistDialog2" timestamp="1597572547616">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597501794302" />
+    <state x="440" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597572547616" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1597563331923">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -362,6 +330,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597501225430" />
+    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597571952095">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597571952095" />
     <state x="731" y="238" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1597409154140">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
