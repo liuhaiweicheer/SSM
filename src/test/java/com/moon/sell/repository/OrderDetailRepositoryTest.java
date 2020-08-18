@@ -21,7 +21,7 @@ class OrderDetailRepositoryTest {
     
     @Test
     void findByOrOrderId() {
-        List<OrderDetail> orderDetailList = repository.findByOrOrderId("100001");
+        List<OrderDetail> orderDetailList = repository.findByOrderId("100001");
         for(OrderDetail orderDetail:orderDetailList){
             System.out.println(orderDetail);
         }

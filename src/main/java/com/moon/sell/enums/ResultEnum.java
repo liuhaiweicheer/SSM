@@ -34,7 +34,17 @@ public enum ResultEnum {
 
     WECHAT_MP_ERROR(20,"微信公总账号方面错误"),
 
-    WXPAY_NOTIFY_MONEY_VERIFY_ERROR(21,"银行支付信息错误")
+    WXPAY_NOTIFY_MONEY_VERIFY_ERROR(21,"银行支付信息错误"),
+
+    ORDER_CANCEL_SUCCESS(22,"取消订单成功"),
+
+    ORDER_FINISH_SUCCESS(23,"订单完成"),
+
+    PRODUCT_STATUS_ERROR(24,"商品状态不正确"),
+
+
+
+
     ;
 
     private Integer code;

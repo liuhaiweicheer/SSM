@@ -1,6 +1,8 @@
 package com.moon.sell.service.impl;
 
 import com.moon.sell.dataObject.ProductInfo;
+import com.moon.sell.enums.ProductStatusEnum;
+import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -51,5 +53,17 @@ class ProductInfoServiceImplTest {
         productInfo.setProductStatus(0);
         productInfo.setCategoryType(2);
         productInfoService.save(productInfo);
+    }
+
+    @Test
+    void onSale() {
+        ProductInfo productInfo = productInfoService.onSale("123456");
+        Assert.assertEquals(ProductStatusEnum.UP,productInfo.getProductStatusEnum());
+    }
+
+    @Test
+    void offSale() {
+        ProductInfo productInfo = productInfoService.offSale("123456");
+        Assert.assertEquals(ProductStatusEnum.DOWN,productInfo.getProductStatusEnum());
     }
 }

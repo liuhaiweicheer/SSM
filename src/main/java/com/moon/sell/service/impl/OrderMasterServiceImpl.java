@@ -110,16 +110,20 @@ public class OrderMasterServiceImpl implements OrderMasterService {
     @Override
     public OrderDTO findOne(String orderId) {
         OrderMaster orderMaster = orderMasterRepository.getOne(orderId);
-        if(orderMaster == null){
+        if (orderMaster == null) {
+            log.error("查找订单出错");
             throw new SellException(ResultEnum.ORDER_NOT_EXIST);
         }
-        List<OrderDetail> orderDetailList = orderDetailRepository.findByOrOrderId(orderMaster.getOrderId());
-        if(CollectionUtils.isEmpty(orderDetailList)){
+
+        List<OrderDetail> orderDetailList = orderDetailRepository.findByOrderId(orderId);
+        if (CollectionUtils.isEmpty(orderDetailList)) {
             throw new SellException(ResultEnum.ORDERDETAIL_NOT_EXIST);
         }
+
         OrderDTO orderDTO = new OrderDTO();
-        BeanUtils.copyProperties(orderMaster,orderDTO);
+        BeanUtils.copyProperties(orderMaster, orderDTO);
         orderDTO.setOrderDetailList(orderDetailList);
+
         return orderDTO;
     }
 

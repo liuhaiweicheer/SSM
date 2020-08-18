@@ -1,6 +1,9 @@
 package com.moon.sell.dataObject;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.moon.sell.enums.ProductStatusEnum;
+import com.moon.sell.enums.ResultEnum;
+import com.moon.sell.utils.EnumUtil;
 import com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations.PrivateKeyResolver;
 import lombok.Data;
 import org.hibernate.annotations.DynamicUpdate;
@@ -43,5 +46,9 @@ public class ProductInfo {
 
     private Date updateTime;
 
+    @JsonIgnore
+    public ProductStatusEnum getProductStatusEnum(){
+        return EnumUtil.getByCode(productStatus, ProductStatusEnum.class);
+    }
 
 }
