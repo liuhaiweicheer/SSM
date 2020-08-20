@@ -29,6 +29,11 @@ spring:
   freemarker:
     suffix: .ftl  #  SpringBoot在2.2.X中，已经把原先默认的后缀名.ftl改成了.ftlh，如果想继续保持以前的.ftl后缀名，需要在配置文件application.yml中配置一下（或application.properties，修改一下排版格式）：
 #    template-loader-path: classpath:/templates/
+  redis:
+    host: 192.168.43.110
+    port: 6379
+
+
 
 
 wechat:

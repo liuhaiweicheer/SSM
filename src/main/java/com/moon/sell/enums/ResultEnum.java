@@ -42,6 +42,11 @@ public enum ResultEnum {
 
     PRODUCT_STATUS_ERROR(24,"商品状态不正确"),
 
+    LOGIN_ERROR(25, "openid 匹配失败， 登录信息不真确"),
+
+    LOGOUT_SUCCESS(26,"登出成功")
+
+
 
 
 

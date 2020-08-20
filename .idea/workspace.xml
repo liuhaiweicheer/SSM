@@ -2,41 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf14a99c-977d-4a1e-8da9-3337af104691" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/log/error.2020-08-17.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/info.2020-08-17.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/controller/SellerProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/form/ProductForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/category/index.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/category/list.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/product/index.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/product/list.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/error.2020-08-18.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/error.2020-08-19.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/info.2020-08-18.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/info.2020-08-19.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/config/WeChatOpenConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/constant/CookieConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/constant/RedisConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/controller/SellerCategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/controller/SellerUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/dataObject/SellerInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/form/CategoryForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/repository/SellerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/service/SellerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/service/impl/SellerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/utils/CookieUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/moon/sell/repository/SellerRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moon/sell/controller/SellerOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/controller/SellerOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moon/sell/dataObject/ProductInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/dataObject/ProductInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moon/sell/enums/ProductStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/enums/ProductStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/moon/sell/SellApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/SellApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/moon/sell/controller/WechatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/controller/WechatController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/moon/sell/enums/ResultEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/enums/ResultEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moon/sell/repository/OrderDetailRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/repository/OrderDetailRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moon/sell/service/ProductInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/service/ProductInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moon/sell/service/impl/OrderMasterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/service/impl/OrderMasterServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moon/sell/service/impl/ProductInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moon/sell/service/impl/ProductInfoServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/order/detail.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/order/detail.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/order/list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/order/list.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/moon/sell/repository/OrderDetailRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/moon/sell/repository/OrderDetailRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/moon/sell/service/impl/ProductInfoServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/moon/sell/service/impl/ProductInfoServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/category/list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/category/list.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/moon/sell/controller/SellerOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/moon/sell/controller/SellerOrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/moon/sell/dataObject/ProductInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/moon/sell/dataObject/ProductInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/moon/sell/enums/ProductStatusEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/moon/sell/enums/ProductStatusEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/moon/sell/SellApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/moon/sell/SellApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/moon/sell/controller/WechatController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/moon/sell/controller/WechatController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/moon/sell/enums/ResultEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/moon/sell/enums/ResultEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/moon/sell/repository/OrderDetailRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/moon/sell/repository/OrderDetailRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/moon/sell/service/ProductInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/moon/sell/service/ProductInfoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/moon/sell/service/impl/OrderMasterServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/moon/sell/service/impl/OrderMasterServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/moon/sell/service/impl/ProductInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/moon/sell/service/impl/ProductInfoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/order/detail.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/order/detail.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/order/list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/order/list.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/moon/sell/repository/OrderDetailRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/moon/sell/repository/OrderDetailRepositoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/moon/sell/service/impl/ProductInfoServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/moon/sell/service/impl/ProductInfoServiceImplTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +39,8 @@
       <list>
         <option value="XML File" />
         <option value="Enum" />
-        <option value="JUnit5 Test Class" />
         <option value="HTML File" />
+        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -100,7 +91,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
+    <property name="last_opened_file_path" value="D:/Desk/wxOrder-master" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -109,54 +100,22 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.moon.sell.service.impl" />
       <recent name="com.moon.sell.repository" />
+      <recent name="com.moon.sell.service.impl" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.moon.sell.enums" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\MyCode\sell\src\main\resources\templates" />
       <recent name="D:\MyCode\sell\src\main\resources\static" />
       <recent name="D:\MyCode\sell\src\main\resources\templates\pay" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.moon.sell.enums" />
-    </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProductInfoServiceImplTest.onSale">
-    <configuration name="OrderMasterServiceTest.findList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sell" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.moon.sell.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.moon.sell.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.moon.sell.service.impl.OrderMasterServiceTest" />
-      <option name="METHOD_NAME" value="findList" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderMasterServiceTest.findList2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sell" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.moon.sell.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.moon.sell.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.moon.sell.service.impl.OrderMasterServiceTest" />
-      <option name="METHOD_NAME" value="findList2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.SellApplication">
     <configuration name="OrderMasterServiceTest.findOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sell" />
       <extension name="coverage">
@@ -205,6 +164,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SellerRepositoryTest.findByOpenid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sell" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.moon.sell.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.moon.sell.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.moon.sell.repository.SellerRepositoryTest" />
+      <option name="METHOD_NAME" value="findByOpenid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SellerRepositoryTest.testSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sell" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.moon.sell.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.moon.sell.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.moon.sell.repository.SellerRepositoryTest" />
+      <option name="METHOD_NAME" value="testSave" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SellApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="sell" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.moon.sell.SellApplication" />
@@ -214,11 +205,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SellerRepositoryTest.findByOpenid" />
+        <item itemvalue="JUnit.SellerRepositoryTest.testSave" />
         <item itemvalue="JUnit.ProductInfoServiceImplTest.onSale" />
         <item itemvalue="JUnit.ProductInfoServiceImplTest.offSale" />
         <item itemvalue="JUnit.OrderMasterServiceTest.findOne" />
-        <item itemvalue="JUnit.OrderMasterServiceTest.findList2" />
-        <item itemvalue="JUnit.OrderMasterServiceTest.findList" />
       </list>
     </recent_temporary>
   </component>
@@ -252,6 +243,8 @@
       <workItem from="1597460214526" duration="23028000" />
       <workItem from="1597557422291" duration="15533000" />
       <workItem from="1597663464575" duration="10225000" />
+      <workItem from="1597749917982" duration="7711000" />
+      <workItem from="1597841436109" duration="6282000" />
     </task>
     <task id="LOCAL-00001" summary="SpringBoot 微信公众号点餐后端">
       <created>1597499187705</created>
@@ -288,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597572565463</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="SpringBoot 微信公众号点餐后端">
+      <created>1597749990696</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1597749990696</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,54 +312,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="694" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597569689463" />
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1597670125323">
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1597845304780">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597670125323" />
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597845304780" />
     <state x="690" y="296" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1597567445987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="296" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597567445986" />
-    <state x="440" y="114" key="CommitChangelistDialog2" timestamp="1597572563990">
+    <state x="440" y="114" key="CommitChangelistDialog2" timestamp="1597749989253">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597572563990" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1597663576148">
+    <state x="440" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597749989253" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1597841765981">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597663576148" />
-    <state width="1877" height="178" key="GridCell.Tab.0.bottom" timestamp="1597673698738">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597841765981" />
+    <state width="1877" height="178" key="GridCell.Tab.0.bottom" timestamp="1597847724498">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="178" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597673698738" />
-    <state width="1877" height="178" key="GridCell.Tab.0.center" timestamp="1597673698738">
+    <state width="1877" height="178" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597847724498" />
+    <state width="1877" height="178" key="GridCell.Tab.0.center" timestamp="1597847724498">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="178" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597673698738" />
-    <state width="1877" height="178" key="GridCell.Tab.0.left" timestamp="1597673698738">
+    <state width="1877" height="178" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597847724498" />
+    <state width="1877" height="178" key="GridCell.Tab.0.left" timestamp="1597847724498">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="178" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597673698738" />
-    <state width="1877" height="178" key="GridCell.Tab.0.right" timestamp="1597673698738">
+    <state width="1877" height="178" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597847724498" />
+    <state width="1877" height="178" key="GridCell.Tab.0.right" timestamp="1597847724498">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="178" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597673698738" />
-    <state width="1877" height="163" key="GridCell.Tab.1.bottom" timestamp="1597673698735">
+    <state width="1877" height="178" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597847724498" />
+    <state width="1877" height="178" key="GridCell.Tab.1.bottom" timestamp="1597847724498">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="163" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597673698735" />
-    <state width="1877" height="163" key="GridCell.Tab.1.center" timestamp="1597673698735">
+    <state width="1877" height="178" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597847724498" />
+    <state width="1877" height="178" key="GridCell.Tab.1.center" timestamp="1597847724498">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="163" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597673698735" />
-    <state width="1877" height="163" key="GridCell.Tab.1.left" timestamp="1597673698735">
+    <state width="1877" height="178" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597847724498" />
+    <state width="1877" height="178" key="GridCell.Tab.1.left" timestamp="1597847724498">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="163" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597673698735" />
-    <state width="1877" height="163" key="GridCell.Tab.1.right" timestamp="1597673698735">
+    <state width="1877" height="178" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597847724498" />
+    <state width="1877" height="178" key="GridCell.Tab.1.right" timestamp="1597847724498">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="163" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597673698735" />
+    <state width="1877" height="178" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597847724498" />
     <state width="1877" height="163" key="GridCell.Tab.2.bottom" timestamp="1597673698735">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -392,10 +392,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597571952095" />
-    <state x="731" y="238" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1597670456777">
+    <state x="731" y="238" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1597761705057">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="731" y="238" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597670456777" />
+    <state x="731" y="238" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597761705057" />
     <state x="634" y="311" key="git4idea.merge.GitPullDialog" timestamp="1597501136558">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -404,9 +404,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597665734108" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1597476215100">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1597843832451">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597476215100" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597843832451" />
   </component>
 </project>
