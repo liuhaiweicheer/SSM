@@ -31,12 +31,12 @@ public class SellerAuthorizeAspect {
     @Autowired
     private StringRedisTemplate redisTemplate;
 
-    @Pointcut("execution(public * com.moon.sell.controller.Seller*.*(..))" + "&& !execution(public * com.moon.sell.controller.SellerUserController.*(..))")
+//    @Pointcut("execution(public * com.moon.sell.controller.Seller*.*(..))" + "&& !execution(public * com.moon.sell.controller.SellerUserController.*(..))")
     public void verify(){
 
     }
 
-    @Before("verify()")
+//    @Before("verify()")
     public void doVerify(){
         ServletRequestAttributes requestAttributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = requestAttributes.getRequest();
@@ -49,7 +49,7 @@ public class SellerAuthorizeAspect {
         //   去 Redis 里面查询
         String tokenValue = redisTemplate.opsForValue().get(String.format(RedisConstant.TOKEN_PREFIX, cookie));
         if(StringUtils.isEmpty(tokenValue)){
-            log.warn("登陆校验");
+            log.warn(" 登陆校验 ： redis 查不到 token");
             throw new SellerAuthorizeException();
         }
 

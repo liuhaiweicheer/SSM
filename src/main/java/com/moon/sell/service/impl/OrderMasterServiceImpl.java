@@ -15,6 +15,8 @@ import com.moon.sell.repository.OrderMasterRepository;
 
 import com.moon.sell.service.OrderMasterService;
 import com.moon.sell.service.PayService;
+import com.moon.sell.service.PushMessageService;
+import com.moon.sell.service.WebSocket;
 import com.moon.sell.utils.KeyUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.weaver.ast.Or;
@@ -55,6 +57,12 @@ public class OrderMasterServiceImpl implements OrderMasterService {
 
     @Autowired
     private PayService payService;
+
+    @Autowired
+    private PushMessageService pushMessageService;
+
+    @Autowired
+    private WebSocket webSocket;
 
     @Override
     @Transactional
@@ -103,7 +111,9 @@ public class OrderMasterServiceImpl implements OrderMasterService {
                 .collect(Collectors.toList());
         productInfoService.decreaseStock(cartDTOList);
         
-        
+        //  发送 Web Socket 消息
+        webSocket.sendMessage("有新的订单");
+
         return orderDTO;
     }
 
@@ -190,7 +200,12 @@ public class OrderMasterServiceImpl implements OrderMasterService {
         if (save == null) {
             log.error("【订单支付完成】更新失败, orderMaster={}", orderMaster);
             throw new SellException(ResultEnum.ORDER_UPDATE_FAIL);
+
         }
+
+        // 微信推送消息
+//        pushMessageService.orderStatus(orderDTO);
+
         return orderDTO;
     }
 
