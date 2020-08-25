@@ -24,6 +24,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.awt.event.MouseEvent;
 import java.util.Map;
+import java.util.Scanner;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
@@ -61,7 +62,7 @@ public class SellerUserController {
         redisTemplate.opsForValue().set(String.format(RedisConstant.TOKEN_PREFIX,token), openid,expire, TimeUnit.SECONDS);
         // 设置 token 到 cookie
 
-        CookieUtil.set(response, CookieConstant.TOKEN, token, 20);
+        CookieUtil.set(response, CookieConstant.TOKEN, token, CookieConstant.expire);
 
         return new ModelAndView("redirect:/seller/order/list");
     }
@@ -83,4 +84,8 @@ public class SellerUserController {
         }
         return null;
     }
+
+
+
+
 }
