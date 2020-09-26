@@ -1,11 +1,13 @@
 package com.moon.sell.exception;
 
 import com.moon.sell.enums.ResultEnum;
+import lombok.Getter;
 
 /**
  * @author lhw
  * @date 2020/8/14
  */
+@Getter
 public class SellException extends RuntimeException {
 
     private Integer code;

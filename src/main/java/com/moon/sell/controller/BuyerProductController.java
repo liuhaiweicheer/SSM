@@ -78,14 +78,12 @@ public class BuyerProductController {
             productVOList.add(productVO);
         }
 
-
 //        ResultVO resultVO = new ResultVO();
 //        resultVO.setCode(1);
 //        resultVO.setMsg("成功");
 //        resultVO.setData(Arrays.asList( productVOList));
 //        return resultVO;
         return ResultVOUtil.success(productVOList);
-
     }
 
 }
